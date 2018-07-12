@@ -38,4 +38,4 @@ Result
 }
 ```
 
-<h2><a href="http://bachors.com/code/nik-parse">DEMO</a></h2>
+<h2><a href="http://jsfiddle.net/p2vdjfch/5/">DEMO</a></h2>
