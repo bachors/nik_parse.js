@@ -1,6 +1,6 @@
 /*******************************************
  * #### nik_parse.js ####
- * Parse Nomor Induk Kependudukan (NIK) KTP
+ * Parse NIK
  * Coded by @bachors 2018.
  * https://github.com/bachors/nik_parse.js
  * Updates will be posted to this site.
