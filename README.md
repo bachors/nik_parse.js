@@ -1,5 +1,9 @@
 # nik_parse.js
-Parse Nomor Induk Kependudukan (NIK) KTP Menggunakan Javascript.
+Parse NIK Menggunakan Javascript.
+
+Kodevikasi/menterjemahkan NIK untuk memvalidasi asli atau palsu untuk menghindari penipuan.
+
+<img src="kodenik.jpg"/>
 
 Sample
 ------
@@ -7,7 +11,7 @@ Sample
 <script type="text/javascript" src="js/nik_parse.js"></script>
 <script>
 
-	const nik = "3204110609970004";
+	const nik = "xxxxxxxxxxxxxxxx";
 	
 	// parse
 	const result = nikParse(nik);
@@ -22,7 +26,7 @@ Result
 ------
 ```json
 {
-  "nik": "3204110609970004",
+  "nik": "xxxxxxxxxxxxxxxx",
   "wilayah": {
     "provinsi": "JAWA BARAT",
     "kotakab": "KAB. BANDUNG",
@@ -37,5 +41,3 @@ Result
   "uniqcode": "0004"
 }
 ```
-
-<h2><a href="http://jsfiddle.net/p2vdjfch/5/">DEMO</a></h2>
