@@ -43,7 +43,7 @@ module.exports = function(nik){
 		return result;
 	}catch(err){
 		result = {
-			error: "KTP Tidak Valid"
+			error: "NIK Tidak Valid"
 		}
 		return result;
 	}
