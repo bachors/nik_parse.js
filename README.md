@@ -1,6 +1,7 @@
 # nik_parse.js
 Parse & Validasi Nomor Induk Kependudukan (NIK) KTP Menggunakan Javascript.
 
+# rumus
 <img src="kodenik.jpg"/>
 
 Sample
