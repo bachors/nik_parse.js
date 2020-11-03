@@ -59,7 +59,8 @@ const nikParse = function(nik, callback) {
                         U = function(A) {
                             const N = A.split(/\D/),
                                 U = new Date(N[2], --N[1], N[0]);
-                            return U && U.getMonth() == N[1] ? U : new Date(NaN)
+                            //return U && U.getMonth() == N[1] ? U : new Date(NaN)
+                            return U && U.getMonth() == N[1] || U.getMonth() == ++N[1] ? U : new Date(NaN)
                         }(A) - N,
                         I = Math.floor(U / 2592e6),
                         G = Math.floor(U % 2592e6 / 864e5);
@@ -71,12 +72,13 @@ const nikParse = function(nik, callback) {
                 M = E[2]; // int tahun lahir
             
 			// Pasaran
-            const S = new Date(2013, 1, 1),
+			const S = new Date(70, 0, 2),
 				P = new Date(M, B, L),
-				D = Math.round(Math.abs((S.getTime() - P.getTime()) / 864e5)),
-				H = ["Kliwon", "Legi", "Pahing", "Pon", "Wage"][D % 5],
+				V = (P.getTime() - S.getTime() + 864e5) / 432e6,
+				D = Math.round(10 * (V - Math.floor(V))) / 2,
+				H = ["Wage", "Kliwon", "Legi", "Pahing", "Pon"][D],
 				Z = `${["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"][R("w",G(0,0,0,B,L,M))]} ${H}, ${L} ${["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember"][B-1]} ${M}`;
-				
+								
 			// Usia				
             utahun = R("Y") - M, ubulan = R("m") - B, uhari = R("j") - L, uhari < 0 && (uhari = R("t", G(0, 0, 0, B - 1, R("m"), R("Y"))) - Math.abs(uhari), ubulan -= 1);
             ubulan < 0 && (ubulan = 12 - Math.abs(ubulan), utahun -= 1);
