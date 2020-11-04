@@ -54,7 +54,10 @@ Result
 }
 ```
 
-<h2><a href="http://bachors.com/code/validasi-nik-ktp-menggunakan-javascript-nik_parsejs?embed">DEMO</a></h2>
+<h2><a target="_BLANK" href="http://bachors.com/code/validasi-nik-ktp-menggunakan-javascript-nik_parsejs?embed">DEMO</a></h2>
+
+# nik_parser.ts
+NIK Parser in TypeScript by <a target="_BLANK" href="https://github.com/mul14/nik_parser.ts?fbclid=IwAR0yu4Vadmdi13Z9rVNyiSIuZuybq2bD1THGNTQqZMQNanYvjsCVN9HldR0">mul14</a>.
 
 # note
 Data yang dihasilkan hanya hasil menterjemahkan tiap digit NIK sehingga data yang dihasilkan adalah tempat pertamakali NIK dibuat/tempat lahir (bukan tempat domisili pemilik NIK secara uptodate).
