@@ -1,24 +1,23 @@
-# nik_parse.js
 Parse & Validasi Nomor Induk Kependudukan (NIK) KTP Menggunakan Javascript.
 
-# rumus
+rumus
+-----
 <img src="kodenik.jpg"/>
 
+- <a href="#nik_parse.js">nik_parse.js</a>
+- <a href="#nik-parse-cli">nik-parse cli</a>
+- <a href="#nik_parser.ts">nik_parser.ts</a>
+
+# <a href="https://github.com/bachors/nik_parse.js/tree/master/src">nik_parse.js</a>
 Sample
 ------
 ```html
-<script type="text/javascript" src="js/nik_parse.js"></script>
+<script type="text/javascript" src="src/nik_parse.js"></script>
 <script>
-
 	const nik = "3204110609970001";
-
 	nikParse(nik, function(result) {
-	
-		// object
-		console.log(result);
-	
-	});
-	
+		console.log(result); // object
+	});	
 </script>
 ```
 
@@ -47,17 +46,25 @@ Result
 }
 ```
 
-```json
-{
-  "status": "error",
-  "pesan": "NIK tidak valid"
-}
+<h2><a href="http://bachors.com/code/validasi-nik-ktp-menggunakan-javascript-nik_parsejs?embed">DEMO</a></h2>
+
+# <a href="https://www.npmjs.com/package/nik-parse">nik-parse-cli</a>
+install
+```
+npm i nik-parse -g
 ```
 
-<h2><a target="_BLANK" href="http://bachors.com/code/validasi-nik-ktp-menggunakan-javascript-nik_parsejs?embed">DEMO</a></h2>
+command
+```
+nik-parse --nik 3204110609970001
+```
+alias
+```
+nik-parse -n 3204110609970001
+```
 
-# nik_parser.ts
-NIK Parser in TypeScript by <a target="_BLANK" href="https://github.com/mul14/nik_parser.ts?fbclid=IwAR0yu4Vadmdi13Z9rVNyiSIuZuybq2bD1THGNTQqZMQNanYvjsCVN9HldR0">mul14</a>.
+# <a href="https://github.com/mul14/nik_parser.ts?fbclid=IwAR0yu4Vadmdi13Z9rVNyiSIuZuybq2bD1THGNTQqZMQNanYvjsCVN9HldR0">nik_parser.ts</a>
+NIK Parser in TypeScript by @mul14.
 
 # note
 Data yang dihasilkan hanya hasil menterjemahkan tiap digit NIK sehingga data yang dihasilkan adalah tempat pertamakali NIK dibuat/tempat lahir (bukan tempat domisili pemilik NIK secara uptodate).
