@@ -23,6 +23,5 @@
     },
     "dependencies": {
         "yargs": "^13.2.4"
-    },
-    "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+    }
 }
