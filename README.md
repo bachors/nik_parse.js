@@ -4,6 +4,8 @@ Parse & Validasi Nomor Induk Kependudukan (NIK) KTP Menggunakan Javascript.
 <h3>- <a href="#nik-parse-cli">nik-parse cli</a></h3>
 <h3>- <a href="#nik_parserts">nik_parser.ts</a></h3>
 
+---------------------------------------------------------------
+
 Rumus
 
 <img src="kodenik.jpg"/>
