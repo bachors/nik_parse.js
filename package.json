@@ -1,0 +1,27 @@
+{
+    "name": "nik-parse",
+    "version": "1.0.0",
+    "description": "1.0.0",
+    "main": "bin/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bachors/nik_parse.js.git"
+    },
+    "keywords": [
+        "nik_parse",
+		"nik",
+        "ktp",
+        "cli"
+    ],
+    "author": "bachors",
+    "license": "MIT",
+    "bin": {
+        "nik-parse": "./bin/index.js"
+    },
+    "dependencies": {
+        "yargs": "^13.2.4"
+    }
+}
