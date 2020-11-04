@@ -73,7 +73,7 @@ const nikParse = function(nik, callback) {
             
 			// Pasaran
 			const S = new Date(70, 0, 2),
-				P = new Date(M, B, L),
+				P = new Date(M, B-1, L),
 				V = (P.getTime() - S.getTime() + 864e5) / 432e6,
 				D = Math.round(10 * (V - Math.floor(V))) / 2,
 				H = ["Wage", "Kliwon", "Legi", "Pahing", "Pon"][D],
