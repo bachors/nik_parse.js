@@ -4,13 +4,12 @@ Parse & Validasi Nomor Induk Kependudukan (NIK) KTP Menggunakan Javascript.
 <h3>- <a href="#nik-parsecli">nik-parse cli</a></h3>
 <h3>- <a href="#nik_parserts">nik_parser.ts</a></h3>
 
-rumus
------
+Rumus
+
 <img src="kodenik.jpg"/>
 
 # <a href="https://github.com/bachors/nik_parse.js/tree/master/src">nik_parse.js</a>
 Sample
-------
 ```html
 <script type="text/javascript" src="src/nik_parse.js"></script>
 <script>
@@ -22,7 +21,6 @@ Sample
 ```
 
 Result
-------
 ```json
 {
   "status": "success",
@@ -49,16 +47,16 @@ Result
 <h2><a href="http://bachors.com/code/validasi-nik-ktp-menggunakan-javascript-nik_parsejs?embed">DEMO</a></h2>
 
 # <a href="https://www.npmjs.com/package/nik-parse">nik-parse cli</a>
-install
+Install
 ```
 npm i nik-parse -g
 ```
 
-command
+Command
 ```
 nik-parse --nik 3204110609970001
 ```
-alias
+Alias
 ```
 nik-parse -n 3204110609970001
 ```
