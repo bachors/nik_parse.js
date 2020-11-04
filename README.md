@@ -62,7 +62,7 @@ Alias
 ```
 nik-parse -n 3204110609970001
 ```
-<img src="cli.jpg"/>
+<img src="cli.jpg" width="70%"/>
 
 # <a href="https://github.com/mul14/nik_parser.ts?fbclid=IwAR0yu4Vadmdi13Z9rVNyiSIuZuybq2bD1THGNTQqZMQNanYvjsCVN9HldR0">nik_parser.ts</a>
 NIK Parser in TypeScript by @mul14.
