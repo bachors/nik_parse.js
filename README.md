@@ -8,7 +8,7 @@ Parse & Validasi Nomor Induk Kependudukan (NIK) KTP Menggunakan Javascript.
 
 Rumus
 
-<img src="kodenik.jpg"/>
+<img src="img/kodenik.jpg"/>
 
 # <a href="https://github.com/bachors/nik_parse.js/tree/master/src">nik_parse.js</a>
 Sample
@@ -62,10 +62,10 @@ Alias
 ```
 nik-parse -n 3204110609970001
 ```
-<img src="cli.jpg" width="70%"/>
+<img src="img/cli.jpg" width="70%"/>
 
 # <a href="https://github.com/mul14/nik_parser.ts?fbclid=IwAR0yu4Vadmdi13Z9rVNyiSIuZuybq2bD1THGNTQqZMQNanYvjsCVN9HldR0">nik_parser.ts</a>
 NIK Parser in TypeScript by @mul14.
 
-# note
-Data yang dihasilkan hanya hasil menterjemahkan tiap digit NIK sehingga data yang dihasilkan adalah tempat pertamakali NIK dibuat/tempat lahir (bukan tempat domisili pemilik NIK secara uptodate).
+# Catatan
+Data yang dihasilkan hanya hasil menerjemahkan tiap digit NIK sehingga data yang dihasilkan adalah tempat pertama kali NIK dibuat / tempat lahir (bukan tempat domisili pemilik NIK terbaru).
