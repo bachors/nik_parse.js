@@ -9,18 +9,55 @@
   <body>
     <header>
       <h1>NIK Parser</h1>
-      <p>Penerjemah tiap digit Nomor Induk Kependudukan</p>
+      <p>Penerjemah Tiap Digit Nomor Induk Kependudukan</p>
     </header>
     <section>
       <input type="text" name="nik" id="nik" placeholder="Masukkan NIK Anda" />
       <button type="submit" id="nik" name="nik" onclick="push()">Kirim</button>
     </section>
+    <section class="content"></section>
+    <footer>
+      <p><i>*Data NIK diambil dari menerjemahkan tiap digit, bukan dari suatu sumber tertentu</i></p>
+    </footer>
     <script src="data/data.js"></script>
     <script src="src/nik_parse.js"></script>
     <script>
       function push() {
-        nikParse("7317110405040001", U, function (res) {
-          console.log(res.data);
+        const nik = document.querySelector("#nik").value;
+        const content = document.querySelector('.content')
+        nikParse(nik, U, function (res) {
+          console.log(res.status)
+          content.innerHTML = 'Data tidak ditemukan'
+          const {
+            status,
+            data: {
+              nik,
+              kelamin,
+              lahir,
+              provinsi,
+              kotakab,
+              kecamatan,
+              uniqcode,
+              tambahan: { kodepos, pasaran, usia, ultah, zodiak },
+            },
+          } = res;
+          if(status == 'success') {
+            content.innerHTML = `
+            <h2>Data Diri</h2>
+            <p>NIK: ${nik}</p>
+            <p>Jenis Kelamin: ${kelamin}</p>
+            <p>Lahir: ${lahir}</p>
+            <p>Provinsi: ${provinsi}</p>
+            <p>Kota / Kabupaten: ${kotakab}</p>
+            <p>Kecamatan: ${kecamatan}</p>
+            <p>Kode Post: ${kodepos}</p>
+            <p>Tanggal Lahir: ${pasaran}</p>
+            <p>Usia: ${usia}</p>
+            <p>Ultah: ${ultah}</p>
+            <p>Zodiak: ${zodiak}</p>
+          `;
+          }
+          
         });
       }
     </script>
