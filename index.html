@@ -26,7 +26,6 @@
         const nik = document.querySelector("#nik").value;
         const content = document.querySelector('.content')
         nikParse(nik, U, function (res) {
-          console.log(res.status)
           content.innerHTML = 'Data tidak ditemukan'
           const {
             status,
