@@ -1,4 +1,6 @@
 bin
+node_modules
 .gitattributes
+.prettierignore
+.prettierrc.json
 test.js
-*.jpg
