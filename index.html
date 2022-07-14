@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIK Parser</title>
+  </head>
+  <body>
+    <header>
+      <h1>NIK Parser</h1>
+      <p>Penerjemah tiap digit Nomor Induk Kependudukan</p>
+    </header>
+    <section>
+      <input type="text" name="nik" id="nik" placeholder="Masukkan NIK Anda" />
+      <button type="submit" id="nik" name="nik" onclick="push()">Kirim</button>
+    </section>
+    <script src="data/data.js"></script>
+    <script src="src/nik_parse.js"></script>
+    <script>
+      function push() {
+        nikParse("7317110405040001", U, function (res) {
+          console.log(res.data);
+        });
+      }
+    </script>
+  </body>
+</html>
