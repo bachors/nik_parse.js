@@ -69,3 +69,4 @@ NIK Parser in TypeScript by @mul14.
 
 # note
 Data yang dihasilkan hanya hasil menterjemahkan tiap digit NIK sehingga data yang dihasilkan adalah tempat pertamakali NIK dibuat/tempat lahir (bukan tempat domisili pemilik NIK secara uptodate).
+
