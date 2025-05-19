@@ -1,20 +1,14 @@
-Usage:
-<pre>&#x3C;script type=&#x22;text/javascript&#x22; src=&#x22;src/nik_parse.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
-&#x3C;script&#x3E;
-&#x9;const nik = &#x22;3204110609970004&#x22;;&#x9;
-&#x9;nikParse(nik, function(result) {
-&#x9;&#x9;document.getElementById(&#x22;demo&#x22;).innerHTML = JSON.stringify(result, null, 2);
-&#x9;});&#x9;
-&#x3C;/script&#x3E;
-</pre>
-<br>
+<input type="text" placeholder="NIK" id="nik" value="3204110609970004"> <button onclick="parse()">Parse!</button>
+<hr>
 Result:
 <pre id="demo"></pre>
 
 <script type="text/javascript" src="src/nik_parse.min.js"></script>
 <script>
-	const nik = "3204110609970004";	
+function parse() {
+	const nik = document.getElementById("nik").value;
 	nikParse(nik, function(result) {
 		document.getElementById("demo").innerHTML = JSON.stringify(result, null, 2);
-	});	
+	});
+}
 </script>
