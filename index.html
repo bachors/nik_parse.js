@@ -1,14 +1,65 @@
-<input type="text" placeholder="NIK" id="nik" value="3204110609970004"> <button onclick="parse()">Parse!</button>
-<hr>
-Result:
-<pre id="demo"></pre>
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-NVNPVQ62');</script>
+		<!-- End Google Tag Manager -->
+		<link rel=canonical href=https://bachors.js.org/nik_parse.js/index.html>
+		<meta charset="UTF-8">
+		<meta name="description" content="Parse & Validasi Nomor Induk Kependudukan (NIK) KTP Menggunakan JavaScript.">
+		<meta name="keywords" content="bachors, ican bachors">
+		<meta name="author" content="Bachors">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name=application-name content="Bachors">
+		<meta name=twitter:card content="summary">
+		<meta name=twitter:title content="Bachors | nik_parse.js">
+		<meta name=twitter:site content="@bachors">
+		<meta name=twitter:description content="Parse & Validasi Nomor Induk Kependudukan (NIK) KTP Menggunakan JavaScript.">
+		<meta name=twitter:image content="https://bachors.js.org/img/logo.png">
+		<meta name=twitter:image:alt content="Bachors | nik_parse.js">
+		<meta property="og:image" content="https://bachors.js.org/img/logo.png" />
+		<meta property="og:image:alt" content="Bachors | nik_parse.js" />
+		<meta property="og:site_name" content="Bachors" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Bachors | nik_parse.js" />
+		<meta property="og:url" content="https://bachors.js.org/nik_parse.js/index.html" />
+		<meta property="og:description" content="Parse & Validasi Nomor Induk Kependudukan (NIK) KTP Menggunakan JavaScript." />
+		<meta name="hostname" content="bachors.js.org">
+		<title>Bachors | nik_parse.js</title>
+		<link rel="shortcut icon" href="../img/favicon.ico" />
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-JEH1NEEXKV"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
 
-<script type="text/javascript" src="src/nik_parse.min.js"></script>
-<script>
-function parse() {
-	const nik = document.getElementById("nik").value;
-	nikParse(nik, function(result) {
-		document.getElementById("demo").innerHTML = JSON.stringify(result, null, 2);
-	});
-}
-</script>
+		  gtag('config', 'G-JEH1NEEXKV');
+		</script>
+	</head>
+	<body>
+	
+		<input type="text" placeholder="NIK" id="nik" value="3204110609970004"> <button onclick="parse()">Parse!</button>
+		<hr>
+		Result:
+		<pre id="demo"></pre>
+	
+		<script type="text/javascript" src="src/nik_parse.min.js"></script>
+		<script>
+		function parse() {
+			const nik = document.getElementById("nik").value;
+			nikParse(nik, function(result) {
+				document.getElementById("demo").innerHTML = JSON.stringify(result, null, 2);
+			});
+		}
+		</script>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVNPVQ62"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+	</body>
+</html>
